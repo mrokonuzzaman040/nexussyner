@@ -23,8 +23,17 @@
 
 <body id="home">
     <!-- Navbar Section -->
-    <section class="">
-        <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+    <style>
+        .sticky-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out;
+        }
+    </style>
+    <section class="sticky-navbar">
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-gray-800">
             <a class="text-3xl font-bold leading-none" href="/">
                 <svg class="h-10" alt="logo" viewBox="0 0 10240 10240">
                     <path xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +50,7 @@
                 </button>
             </div>
             <ul
-                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
                 <li><a class="text-sm text-gray-400 hover:text-pink-400 hover:border-b-4 hover:border-b-pink-400"
                         href="#home">Home</a></li>
                 <li class="text-gray-300 hover:text-pink-400">
@@ -90,7 +99,7 @@
         <div class="navbar-menu relative z-50 hidden">
             <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
             <nav
-                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-4/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                 <div class="flex items-center mb-8">
                     <a class="mr-auto text-3xl font-bold leading-none" href="#">
                         <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
@@ -193,13 +202,13 @@
         <div
             class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                <h1 class="text-5xl font-bold leadi sm:text-6xl">Join the
-                    <span class="text-pink-400">leading</span> <br>
+                <h1 class="text-5xl font-bold leadi sm:text-6xl">Become part of the
+                    <span class="text-pink-400">premier </span> <br>
                     affiliate network
                 </h1>
-                <p class="mt-6 mb-8 text-lg sm:mb-12">Discover our exclusive private network. Even if you are a
-                    publisher or
-                    <br class="hidden md:inline lg:hidden">advertiser we have solutions for everyone.
+                <p class="mt-6 mb-8 text-lg sm:mb-12">Explore our unique private network, tailored for both publishers
+                    and advertisers
+                    <br class="hidden md:inline lg:hidden"> with solutions designed for all.
                 </p>
                 <div
                     class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
@@ -207,7 +216,8 @@
                         class="px-8 py-3 text-lg font-semibold rounded bg-pink-400 hover:bg-white hover:text-pink-500 text-gray-900">Sgin
                         Up</a>
                     <a rel="noopener noreferrer" href="#"
-                        class="px-8 py-3 text-lg font-semibold border rounded hover:bg-pink-400 border-gray-100">Contact Us</a>
+                        class="px-8 py-3 text-lg font-semibold border rounded hover:bg-pink-400 border-gray-100">Contact
+                        Us</a>
                 </div>
             </div>
             <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
@@ -220,42 +230,49 @@
     <!-- Four Card Section -->
     <section id="aboutus" class="bg-gray-100">
         <div class="grid lg:grid-cols-4 lg:h-96 md:grid-cols-2 sm:grid-cols-1 p-10 gap-7  mx-auto container">
-            <div class="flex flex-col items-center justify-center text-center">
+            <div class=" flex flex-col items-center justify-center text-center">
                 <div class="mb-5">
-                    <i class="fa-solid fa-star text-6xl"></i>
+                    <i class="text-pink-400 fa-solid fa-star text-6xl"></i>
                     <p>Exclusive campaigns
                     </p>
                 </div>
-                <p>Our approach is to provide you only high quality and exclusive campaigns, here you will find a lot.
+                <p>We are committed to offering you solely high-quality and exclusive campaigns – you'll discover an
+                    abundance of them here.
                 </p>
             </div>
             <div class="flex flex-col items-center justify-center text-center">
                 <div class="mb-5">
-                    <i class="fa-solid fa-gauge icon text-6xl"></i>
+                    <i class="text-pink-400 fa-solid fa-gauge icon text-6xl"></i>
                     <p>Exclusive campaigns
                     </p>
                 </div>
-                <p>Our approach is to provide you only high quality and exclusive campaigns, here you will find a lot.
+                <p>Versatile for any purpose and capable of delivering the most user-friendly experience across all
+                    interactions.
                 </p>
             </div>
             <div class="flex flex-col items-center justify-center text-center">
                 <div class="mb-5">
-                    <i class="fa-solid fa-bolt icon text-6xl"></i>
+                    <i class="text-pink-400 fa-solid fa-bolt icon text-6xl"></i>
                     <p>Exclusive campaigns
                     </p>
                 </div>
-                <p>Our approach is to provide you only high quality and exclusive campaigns, here you will find a lot.
+                <p>Dedicated to excellence, we continually enhance our offerings by incorporating campaigns from
+                    top-performing verticals.
                 </p>
             </div>
-            <div class="flex flex-col items-center justify-center text-center">
-                <div class="mb-5">
-                    <i class="fa fa-credit-card icon text-6xl"></i>
-                    <p>Exclusive campaigns
+            <div class="">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="mb-5">
+                        <i class="text-pink-400 fa-solid fa-credit-card icon text-6xl"></i>
+                        <p>Exclusive campaigns
+                        </p>
+                    </div>
+                    <p>Choose from an extensive array of payment methods, and enjoy the potential for expedited payment
+                        terms eligibility.
                     </p>
                 </div>
-                <p>Our approach is to provide you only high quality and exclusive campaigns, here you will find a lot.
-                </p>
             </div>
+
         </div>
     </section>
 
@@ -273,14 +290,14 @@
                 </div>
                 <div class="flex flex-col gap-8">
                     <p>
-                        Having a large experience with Publishers, we provide top-notch technology and the ability to
-                        profit the most from your traffic.
+                        With extensive experience working with publishers, we offer cutting-edge technology and the
+                        capability to maximize your earnings from your traffic.
                     </p>
                     <p>
-                        We help you find the right target for any type of traffic, providing you tens of verticals and
-                        thousands of different campaigns. Our experienced managers will solve any difficulty you might
-                        encounter while promoting as well as suggesting you top performing verticals and promotion
-                        channels.
+                        Empowering you to pinpoint the ideal target for any traffic type, we offer an extensive range of
+                        verticals and thousands of diverse campaigns. Our seasoned managers are poised to address any
+                        challenges you may encounter during promotion, providing guidance on top-performing verticals
+                        and promotion channels.
                     </p>
                 </div>
                 <div class="flex justify-center mt-8">
@@ -305,7 +322,7 @@
                         <h2 class="text-2xl font-bold">Competitive payouts</h2>
                     </div>
                     <div class="">
-                        We are always looking and adjust the payouts to be over the rest of the industry.
+                        Constantly vigilant, we regularly assess and adjust payouts to surpass industry standards.
                     </div>
                 </div>
                 <!-- 2 -->
@@ -316,8 +333,8 @@
                         </h2>
                     </div>
                     <div class="">
-                        Besides the mainstream campaigns and programs, we offer you private affiliate programs.
-                    </div>
+                        In addition to mainstream campaigns and programs, we provide exclusive access to private
+                        affiliate programs. </div>
                 </div>
                 <!-- 3 -->
                 <div class="flex-col flex items-center gap-6">
@@ -326,7 +343,8 @@
                         <h2 class="text-2xl font-bold">Accurate reports</h2>
                     </div>
                     <div class="">
-                        Our platform is analyzing your traffic and provides comprehensive performance reports.
+                        Our platform analyzes your traffic and delivers detailed performance reports for a comprehensive
+                        understanding of your results.
                     </div>
                 </div>
                 <!-- 4 -->
@@ -337,7 +355,8 @@
                         </h2>
                     </div>
                     <div class="">
-                        Never miss a conversion! Not eligible visitors are sent to the most profitable alternative.
+                        Ensure you never miss a conversion! Ineligible visitors are redirected to the most lucrative
+                        alternative.
                     </div>
                 </div>
                 <!-- 5 -->
@@ -347,7 +366,8 @@
                         <h2 class="text-2xl font-bold">Developer tools</h2>
                     </div>
                     <div class="">
-                        We are able to provide adaptable real-time tools such as OfferWall, API Feed, S2S Postback, etc.
+                        We offer flexible real-time tools, including OfferWall, API Feed, S2S Postback, and more to meet
+                        your dynamic needs.
                     </div>
                 </div>
                 <!-- 6 -->
@@ -358,7 +378,8 @@
                         </h2>
                     </div>
                     <div class="">
-                        Our team is working 24/7 to answer and fix any issues for you in no time.
+                        Our dedicated team operates around the clock to promptly address and resolve any issues you may
+                        encounter.
                     </div>
                 </div>
             </div>
@@ -375,18 +396,19 @@
                 </div>
                 <div class="flex flex-col gap-8">
                     <p>
-                        Always looking for perfection, we have a portfolio of only top-performing campaigns from major
-                        verticals. Because of platform flexibility and our large Publisher number, we are able to drive
-                        traffic in no time and customize any new format.
+                        Pursuing perfection, our portfolio exclusively features top-performing campaigns across major
+                        verticals. With the flexibility of our platform and a vast network of publishers, we excel at
+                        rapidly driving traffic and seamlessly customizing new formats.
                     </p>
                     <p>
-                        We are open to new affiliate programs and campaigns, if you are interested please get in touch
-                        with us and we will find the best solution for your needs.
+                        We welcome new affiliate programs and campaigns. If you're interested, please reach out to us,
+                        and we'll collaborate to find the optimal solution for your requirements.
                     </p>
                 </div>
                 <div class="flex justify-center mt-8">
                     <a rel="noopener noreferrer" href="#"
-                        class="px-8 py-3 text-lg font-semibold rounded bg-pink-400 text-gray-900">Contact Us</a>
+                        class="px-8 py-3 text-lg font-semibold rounded bg-pink-400 text-white hover:bg-white hover:text-pink-500">Contact
+                        Us</a>
                 </div>
             </div>
             <div class="flex flex-col justify-center">
@@ -410,8 +432,8 @@
                 </div>
                 <div class="flex flex-col text-left gap-8">
                     <p>
-                        Feel free to contact us regarding any concerns and our team will answer in a short time. We
-                        strive to provide the best support in the industry.
+                        Don't hesitate to reach out with any concerns; our team is committed to responding promptly. We
+                        aim to offer the industry's best support.
                     </p>
                     <p>
                         <span class="font-bold">Address:</span>
@@ -431,7 +453,8 @@
                         <input type="email" placeholder="Email" class="border border-gray-300 p-2 rounded">
                         <textarea name="description" id="" cols="30" rows="10" placeholder="Message"
                             class="border border-gray-300 p-2 rounded"></textarea>
-                        <button class="px-8 py-3 text-lg font-semibold rounded bg-pink-400 text-gray-900">Send
+                        <button
+                            class="px-8 py-3 text-lg font-semibold rounded bg-pink-400 text-white hover:bg-white hover:text-pink-500">Send
                             Message</button>
                     </div>
                 </form>

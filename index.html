@@ -151,45 +151,45 @@
         </div>
         <script>
             // Burger menus
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener( 'DOMContentLoaded', function () {
                 // open
-                const burger = document.querySelectorAll('.navbar-burger');
-                const menu = document.querySelectorAll('.navbar-menu');
+                const burger = document.querySelectorAll( '.navbar-burger' );
+                const menu = document.querySelectorAll( '.navbar-menu' );
 
-                if (burger.length && menu.length) {
-                    for (var i = 0; i < burger.length; i++) {
-                        burger[i].addEventListener('click', function () {
-                            for (var j = 0; j < menu.length; j++) {
-                                menu[j].classList.toggle('hidden');
+                if ( burger.length && menu.length ) {
+                    for ( var i = 0; i < burger.length; i++ ) {
+                        burger[ i ].addEventListener( 'click', function () {
+                            for ( var j = 0; j < menu.length; j++ ) {
+                                menu[ j ].classList.toggle( 'hidden' );
                             }
-                        });
+                        } );
                     }
                 }
 
                 // close
-                const close = document.querySelectorAll('.navbar-close');
-                const backdrop = document.querySelectorAll('.navbar-backdrop');
+                const close = document.querySelectorAll( '.navbar-close' );
+                const backdrop = document.querySelectorAll( '.navbar-backdrop' );
 
-                if (close.length) {
-                    for (var i = 0; i < close.length; i++) {
-                        close[i].addEventListener('click', function () {
-                            for (var j = 0; j < menu.length; j++) {
-                                menu[j].classList.toggle('hidden');
+                if ( close.length ) {
+                    for ( var i = 0; i < close.length; i++ ) {
+                        close[ i ].addEventListener( 'click', function () {
+                            for ( var j = 0; j < menu.length; j++ ) {
+                                menu[ j ].classList.toggle( 'hidden' );
                             }
-                        });
+                        } );
                     }
                 }
 
-                if (backdrop.length) {
-                    for (var i = 0; i < backdrop.length; i++) {
-                        backdrop[i].addEventListener('click', function () {
-                            for (var j = 0; j < menu.length; j++) {
-                                menu[j].classList.toggle('hidden');
+                if ( backdrop.length ) {
+                    for ( var i = 0; i < backdrop.length; i++ ) {
+                        backdrop[ i ].addEventListener( 'click', function () {
+                            for ( var j = 0; j < menu.length; j++ ) {
+                                menu[ j ].classList.toggle( 'hidden' );
                             }
-                        });
+                        } );
                     }
                 }
-            });
+            } );
         </script>
     </section>
 
@@ -236,7 +236,8 @@
                     <p>About Us</p>
                     </p>
                 </div>
-                <p>NexusSyner" representing a CPA and Affiliate platform that synergizes or collaborates within the interconnected hub.
+                <p>NexusSyner" representing a CPA and Affiliate platform that synergizes or collaborates within the
+                    interconnected hub.
                 </p>
             </div>
 
@@ -422,6 +423,77 @@
         <hr class="w-full h-1 my-4 bg-pink-200 border-0 rounded">
     </div>
 
+    <!-- Container for demo purpose -->
+    <div class="container my-24 mx-auto md:px-6">
+        <section class="mb-32 text-center">
+            <h2 class="mb-12 text-3xl font-bold">Publisher Satisfaction, <span>Our Reputation</span></h2>
+
+            <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+                <div class="mb-12 md:mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                    </div>
+                    <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
+                    <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                        Web Developer
+                    </h6>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+                        id officiis hic tenetur quae quaerat ad velit ab hic.
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+                            <path fill="currentColor"
+                                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="mb-12 md:mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                    </div>
+                    <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+                    <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                        Graphic Designer
+                    </h6>
+                    <p class="mb-4">
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid commodi.
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+                            <path fill="currentColor"
+                                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                        </svg>
+                    </p>
+
+                </div>
+                <div class="mb-0">
+                    <div class="mb-6 flex justify-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+                            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                    </div>
+                    <h5 class="mb-2 text-lg font-bold">John Smith</h5>
+                    <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                        Marketing Specialist
+                    </h6>
+                    <p class="mb-4">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum deleniti atque corrupti.
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+                            <path fill="currentColor"
+                                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                        </svg>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Container for demo purpose -->
+
+    <!-- Devider -->
+    <div class="container mx-auto p-4">
+        <hr class="w-full h-1 my-4 bg-pink-200 border-0 rounded">
+    </div>
+
 
     <!-- Extra Section-1 -->
     <section class="text-gray-600 body-font">
@@ -459,7 +531,7 @@
         <div class="flex justify-center gap-8 ">
             <a href="#"><img class="h-24 rounded-lg" src="./assets/ads/aff-plus.jpg" alt="Aff+"></a>
             <a href="#"><img class="h-24 rounded-lg" src="./assets/ads/afp.jpg" alt="Affiliate Paying"></a>
-        </div>  
+        </div>
     </section>
 
     <!-- Devider -->
@@ -496,7 +568,7 @@
                     </p>
                     <p class="text-blue-400 font-bold ">
                         <span class="text-black">Skype:</span> <a href="mailto:
-                        contact@nexussyner.com">  </a>
+                        contact@nexussyner.com"> </a>
                     </p>
                 </div>
 
@@ -531,16 +603,16 @@
     <button id="to-top-button" onclick="goToTop()" title="Go To Top"
         class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-pink-500 text-white text-3xl font-bold">&uarr;
         <script>
-            var toTopButton = document.getElementById("to-top-button");
+            var toTopButton = document.getElementById( "to-top-button" );
             window.onscroll = function () {
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    toTopButton.classList.remove("hidden");
+                if ( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ) {
+                    toTopButton.classList.remove( "hidden" );
                 } else {
-                    toTopButton.classList.add("hidden");
+                    toTopButton.classList.add( "hidden" );
                 }
             };
             function goToTop() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo( { top: 0, behavior: 'smooth' } );
             }
         </script>
     </button>

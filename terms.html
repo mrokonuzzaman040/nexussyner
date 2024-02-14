@@ -210,7 +210,8 @@
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full normal:w-8/12 px-4 mb-12 normal:mb-0">
                     <h2 class="text-4xl font-bold mb-6">Terms and Conditions</h2>
-                    <p class="text-normal text-white leading-loose mb-6">Please read these terms and conditions carefully
+                    <p class="text-normal text-white leading-loose mb-6">Please read these terms and conditions
+                        carefully
                         before using Our Service.</p>
                     <h3 class="text-2xl font-bold mb-4">Interpretation and Definitions</h3>
                     <h4 class="text-xl font-bold mb-4">Interpretation</h4>
@@ -285,6 +286,27 @@
                     <p class="text-center"> <span class="text-red-500">**</span>
                         This summarizes the key points of the agreement between Publishers and nexussyner.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-pink-500 text-white text-3xl font-bold">&uarr;
+        <script>
+            var toTopButton = document.getElementById( "to-top-button" );
+            window.onscroll = function () {
+                if ( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ) {
+                    toTopButton.classList.remove( "hidden" );
+                } else {
+                    toTopButton.classList.add( "hidden" );
+                }
+            };
+            function goToTop() {
+                window.scrollTo( { top: 0, behavior: 'smooth' } );
+            }
+        </script>
+    </button>
+    <!-- Style compo -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
